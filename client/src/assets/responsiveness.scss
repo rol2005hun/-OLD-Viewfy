@@ -1,0 +1,710 @@
+@media only screen and (min-width: 0px) and (max-width: 500px)  {
+
+  $containerWidth: 250px;
+  $fontSize: 9px;
+  $buttonSize: 100px;
+
+  .closeContentButton {
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 5px !important;
+  }
+  input[type="submit"], button:not(.settingsOptions button)  {
+    width: $buttonSize !important;
+    height: 10px !important;
+    font-size: $fontSize + 3px !important;
+
+  }
+
+  #navigationBar {
+    p {
+      font-size: $fontSize !important;
+    }
+  }
+  /* homepage */
+  .mainContainer {
+    border-radius: 0;
+    width: $containerWidth;
+    height: 1200px;
+    overflow-y: scroll;
+
+    #repliesContainer {
+      .ratings {
+        font-size: $fontSize !important;
+      }
+
+      .main {
+        width: 200px;
+
+        textarea {
+          width: 180px;
+        }
+
+        .replies {
+          .reply {
+            padding-right: 120px;
+          }
+        }
+      }
+    }
+  }
+
+  .postsGridItem, .usersGridItem {
+    width: 150px;
+  }
+
+  h2, h1 {
+    padding: 0 40px 0 40px;
+  }
+
+  p, h1, h2 {
+    font-size: $fontSize + 2px !important;
+  }
+
+  .postsContainer, .usersContainer {
+    float: none;
+    width: 80%;
+    height: 520px !important;
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .postContent, .userContent {
+    width: 100px;
+  }
+
+
+  .createPostButton {
+    display: none;
+  }
+
+  .grid-container {
+    button {
+      width: 110px;
+      height: 20px;
+
+      br {
+        content: ' ';
+        display: none;
+      }
+
+
+    }
+  }
+  .usersGridItem {
+    height: 200px;
+
+    .userContent {
+      height: 150px;
+
+      img {
+        height: 80px;
+        width: 80px;
+      }
+    }
+  }
+
+  /* when enlarged */
+  .userHeading p, .postHeading p {
+    margin: 4% 12% 4% 12% !important;
+  }
+
+  .enlargedUser {
+    .userPosts, .userFollowersFollowing {
+      float: none !important;
+      margin: 2%;
+      width: 220px !important;
+      height: 510px !important;
+
+
+      .userFollowers, .userFollowing {
+        float: none;
+        width: 180px;
+        height: 200px;
+        margin: 2%;
+      }
+    }
+
+    .heading p {
+      margin-top: 0 !important;
+    }
+  }
+
+
+  .enlargedPost {
+    img {
+      width: 200px !important;
+      height: 200px !important;
+    }
+
+    textarea, .previousComments .comment {
+      width: 200px !important;
+    }
+  }
+
+
+  /* WORK ON THIS AT A LATER STAGE*/
+  #navigationBar {
+    .navigationLinks {
+      left: 50%;
+      transform: translate(-70%, -50%);
+      width: fit-content;
+    }
+
+    .navigationBarLogo, #lightBulb {
+      display: none;
+    }
+  }
+  /* above code ends here */
+
+  /* settings page */
+  .profileSettingsHeading {
+    //width: $containerWidth !important;
+    margin-top: 2%;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .leftSection .settingsOptions {
+      height: 30px;
+      margin-bottom: 16%;
+    }
+  }
+  /* above code ends here */
+
+  /* login page */
+  .loginForm, .registerForm, .profileHeading, .mainPostContainer {
+    width: $containerWidth;
+  }
+
+  .profileHeading {
+    height: 400px;
+  }
+
+  /* chat */
+  .chatApp {
+    font-size: $fontSize;
+  }
+  .activeUsersHeading, .chatHeading {
+    height: 120px !important;
+
+    p {
+      font-size: $fontSize;
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px)  {
+
+  $containerWidth: 450px;
+  $fontSize: 14px;
+  $buttonSize: 150px;
+
+  input[type="submit"], button {
+    width: $buttonSize !important;
+  }
+  /* homepage */
+  .mainContainer {
+    border-radius: 0;
+    width: 450px;
+    height: 1200px;
+
+    #repliesContainer {
+      .main {
+        width: 400px;
+
+        textarea {
+          width: 350px;
+        }
+
+        .replies {
+          .reply {
+            padding-right: 120px;
+          }
+        }
+      }
+    }
+  }
+
+  h2, h1 {
+    font-size: 25px;
+    padding: 0 40px 0 40px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+  .postsContainer, .usersContainer {
+    float: none;
+    width: 80%;
+    height: 520px !important;
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+  .createPostButton {
+    display: none;
+  }
+
+  .grid-container {
+    button {
+      width: 110px;
+      height: 20px;
+
+      br {
+        content: ' ';
+        display: none;
+      }
+
+
+    }
+  }
+  .usersGridItem {
+    height: 200px;
+
+    .userContent {
+      height: 150px;
+
+      img {
+        height: 80px;
+        width: 80px;
+      }
+    }
+  }
+
+  /* when enlarged */
+  .userHeading p, .postHeading p {
+    margin: 4% 12% 4% 12% !important;
+  }
+
+  .enlargedUser {
+    .userPosts, .userFollowersFollowing {
+      float: none !important;
+      margin: 2%;
+      width: 420px !important;
+      height: 510px !important;
+
+
+      .userFollowers, .userFollowing {
+        float: none;
+        width: 350px;
+        height: 200px;
+        margin: 2%;
+      }
+    }
+
+    .heading p {
+      margin-top: 0 !important;
+    }
+  }
+
+  .enlargedPost {
+    img {
+      width: 400px !important;
+      height: 400px !important;
+    }
+
+    textarea, .previousComments .comment {
+      width: 400px !important;
+    }
+  }
+
+
+  /* WORK ON THIS AT A LATER STAGE*/
+  #navigationBar {
+    .navigationLinks {
+      left: 50%;
+      transform: translate(-70%, -50%);
+      width: fit-content;
+    }
+
+    .navigationBarLogo, #lightBulb {
+      display: none;
+    }
+  }
+  /* above code ends here */
+
+  /* settings page */
+  .profileSettingsHeading {
+    width: $containerWidth;
+    margin-top: 2%;
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .leftSection .settingsOptions {
+      height: 30px;
+      margin-bottom: 16%;
+    }
+  }
+  /* above code ends here */
+
+  /* login page */
+  .loginForm, .registerForm, .profileHeading, .mainPostContainer {
+    width: $containerWidth;
+  }
+
+  /* chat */
+  .chatApp {
+    font-size: $fontSize;
+  }
+  .activeUsersHeading, .chatHeading {
+    height: 120px !important;
+
+    p {
+      font-size: $fontSize;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  $containerWidth: 750px;
+  $fontSize: 14px;
+  $buttonSize: 150px;
+
+  input[type="submit"], button {
+    width: $buttonSize !important;
+  }
+  /* homepage */
+  .mainContainer {
+    border-radius: 0;
+    width: $containerWidth;
+    height: 1200px;
+
+    #repliesContainer {
+      .main {
+        width: 400px;
+
+        textarea {
+          width: 350px;
+        }
+
+        .replies {
+          .reply {
+            padding-right: 120px;
+          }
+        }
+      }
+    }
+  }
+
+  h2, h1 {
+    font-size: 25px;
+    padding: 0 40px 0 40px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+  .postsContainer, .usersContainer {
+    float: none;
+    width: 80%;
+    height: 520px !important;
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+  .createPostButton {
+    display: none;
+  }
+
+  .grid-container {
+    button {
+      width: 110px;
+      height: 20px;
+
+      br {
+        content: ' ';
+        display: none;
+      }
+
+
+    }
+  }
+  .usersGridItem {
+    height: 200px;
+
+    .userContent {
+      height: 150px;
+
+      img {
+        height: 80px;
+        width: 80px;
+      }
+    }
+  }
+
+  /* when enlarged */
+  .userHeading p, .postHeading p {
+    margin: 4% 12% 4% 12% !important;
+  }
+
+  .enlargedUser {
+    .userPosts, .userFollowersFollowing {
+      float: none !important;
+      margin: 2%;
+      width: 420px !important;
+      height: 510px !important;
+
+
+      .userFollowers, .userFollowing {
+        float: none;
+        width: 350px;
+        height: 200px;
+        margin: 2%;
+      }
+    }
+
+    .heading p {
+      margin-top: 0 !important;
+    }
+  }
+
+  .enlargedPost {
+    img {
+      width: 400px !important;
+      height: 400px !important;
+    }
+
+    textarea, .previousComments .comment {
+      width: 400px !important;
+    }
+  }
+
+
+  /* WORK ON THIS AT A LATER STAGE*/
+  #navigationBar {
+    .navigationLinks {
+      left: 50%;
+      transform: translate(-70%, -50%);
+      width: fit-content;
+    }
+
+    .navigationBarLogo, #lightBulb {
+      display: none;
+    }
+  }
+  /* above code ends here */
+
+  /* settings page */
+  .profileSettingsHeading {
+    width: $containerWidth;
+    margin-top: 2%;
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .leftSection .settingsOptions {
+      height: 30px;
+      margin-bottom: 16%;
+    }
+  }
+  /* above code ends here */
+
+  /* login page */
+  .loginForm, .registerForm, .profileHeading, .mainPostContainer {
+    width: $containerWidth;
+  }
+
+  /* chat */
+  .chatApp {
+    font-size: $fontSize;
+  }
+  .activeUsersHeading, .chatHeading {
+    height: 120px !important;
+
+    p {
+      font-size: $fontSize;
+    }
+  }
+
+}
+
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1800px)  {
+  $containerWidth: 1050px;
+  $fontSize: 14px;
+  $buttonSize: 150px;
+
+  input[type="submit"], button {
+    width: $buttonSize !important;
+  }
+  /* homepage */
+  .mainContainer {
+    border-radius: 0;
+    width: $containerWidth;
+    height: 1200px;
+
+    #repliesContainer {
+      .main {
+        width: 400px;
+
+        textarea {
+          width: 350px;
+        }
+
+        .replies {
+          .reply {
+            padding-right: 120px;
+          }
+        }
+      }
+    }
+  }
+
+  h2, h1 {
+    font-size: 25px;
+    padding: 0 40px 0 40px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+  .postsContainer, .usersContainer {
+    float: none;
+    width: 80%;
+    height: 520px !important;
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+  .createPostButton {
+    display: none;
+  }
+
+  .grid-container {
+    button {
+      width: 110px;
+      height: 20px;
+
+      br {
+        content: ' ';
+        display: none;
+      }
+
+
+    }
+  }
+  .usersGridItem {
+    height: 200px;
+
+    .userContent {
+      height: 150px;
+
+      img {
+        height: 80px;
+        width: 80px;
+      }
+    }
+  }
+
+  /* when enlarged */
+  .userHeading p, .postHeading p {
+    margin: 4% 12% 4% 12% !important;
+  }
+
+  .enlargedUser {
+    .userPosts, .userFollowersFollowing {
+      float: none !important;
+      margin: 2%;
+      width: 420px !important;
+      height: 510px !important;
+
+
+      .userFollowers, .userFollowing {
+        float: none;
+        width: 350px;
+        height: 200px;
+        margin: 2%;
+      }
+    }
+
+    .heading p {
+      margin-top: 0 !important;
+    }
+  }
+
+  .enlargedPost {
+    img {
+      width: 400px !important;
+      height: 400px !important;
+    }
+
+    textarea, .previousComments .comment {
+      width: 400px !important;
+    }
+  }
+
+
+  /* WORK ON THIS AT A LATER STAGE*/
+  #navigationBar {
+    .navigationLinks {
+      left: 50%;
+      transform: translate(-70%, -50%);
+      width: fit-content;
+    }
+
+    .navigationBarLogo, #lightBulb {
+      display: none;
+    }
+  }
+  /* above code ends here */
+
+  /* settings page */
+  .profileSettingsHeading {
+    width: $containerWidth;
+    margin-top: 2%;
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .leftSection .settingsOptions {
+      height: 30px;
+      margin-bottom: 16%;
+    }
+  }
+  /* above code ends here */
+
+  /* login page */
+  .loginForm, .registerForm, .profileHeading, .mainPostContainer {
+    width: $containerWidth;
+  }
+
+  /* chat */
+  .chatApp {
+    font-size: $fontSize;
+  }
+  .activeUsersHeading, .chatHeading {
+    height: 120px !important;
+
+    p {
+      font-size: $fontSize;
+    }
+  }
+}
+
+@media only screen and (min-width: 1800px) and (max-width: 2500px) {
+  .mainContainer {
+    width: 1650px;
+    height: 800px;
+  }
+}
+
+
+
