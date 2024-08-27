@@ -1,0 +1,26 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "Közösségi Média by Vue.js, Node.js, MongoDB és Express",
+  "main": "server/NodeServer.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server/NodeServer.js",
+    "server": "nodemon server/NodeServer.js",
+    "chatServer": "nodemon server/ChatServer.js",
+    "client": "npm run serve --prefix client",
+    "build:client": "cd client && npm run build",
+    "start:all": "concurrently \"npm run server\" \"npm run chatServer\" \"npm run client\"",
+    "start:server": "npm run server",
+    "start:client": "cd client && npm run serve",
+    "install:server": "cd ./server && npm install",
+    "install:client": "cd ./client && npm install",
+    "install:all": "npm install && npm run install:server && npm run install:client"
+  },
+  "author": "Ibbi",
+  "license": "N/A",
+  "dependencies": {
+    "concurrently": "^4.1.2",
+    "nodemon": "^2.0.7"
+  }
+}
