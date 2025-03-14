@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const cors = require('cors');
 const passport = require('passport');
+require('dotenv').config()
 
 // app inicializálás
 const app = express();
@@ -30,6 +31,7 @@ require('./config/passport')(passport);
 
 // mongoose csatlakozás
 const onlineMongoDatabaseKey = require('./config/keys').mongoURI;
+console.log(onlineMongoDatabaseKey)
 mongoose.connect(onlineMongoDatabaseKey, {
     useNewUrlParser: true,
     useUnifiedTopology: true,

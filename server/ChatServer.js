@@ -48,5 +48,5 @@ io.on('connection', socket => {
 });
 
 http.listen(process.env.PORT || 3000, () => {
-    console.log(`[Viewfy] A chat backend elindult a(z) ${PORT} porton.`);
+    console.log(`[Viewfy] A chat backend elindult a(z) ${process.env.PORT} porton.`);
 })
